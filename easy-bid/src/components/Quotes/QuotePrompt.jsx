@@ -42,23 +42,23 @@ const QuotePrompt = () => {
     setResponse('');
     /*Temporary piece of code*/
 
-    setResponse({item:'Fralda Pampers', qnt:'5000 unidades',date_expected:'5 dias'});
+    //setResponse({item:'Fralda Pampers', qnt:'5000 unidades',date_expected:'5 dias'});
     setLoading(false);
     /*------------------------------------------------*/
-    // try {
-    //   const res = await fetch('/api/generate-form', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify({ quote:prompt, }),
-    //   });
-    //   const data = await res.json();
-    //   setResponse(JSON.parse(data.formData));
-    // } catch (error) {
-    //     console.error('Erro ao gerar a cotação:', error);
-    //     setResponse('Erro ao processar o pedido.');
-    // } finally {
-    //     setLoading(false);
-    // }
+    try {
+      const res = await fetch('/api/generate-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ quote:prompt, }),
+      });
+      const data = await res.json();
+      setResponse(JSON.parse(data.formData));
+    } catch (error) {
+        console.error('Erro ao gerar a cotação:', error);
+        setResponse('Erro ao processar o pedido.');
+    } finally {
+        setLoading(false);
+    }
   };
 
   const handleEdit = () => {
