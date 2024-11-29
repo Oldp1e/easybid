@@ -2,14 +2,15 @@
 import React, { useState } from 'react';
 import { Input, Button, Spin, Form, Row, Col, message } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons'; // Ícone da lupa
+import { faSearch } from '@fortawesome/free-solid-svg-icons'; 
+import { useNavigate } from 'react-router-dom';
 import './QuotePrompt.css';
 
 const QuotePrompt = () => {
   const [quote, setPrompt] = useState('');
   const [response, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
-
+  const navigate = useNavigate();
   const prompt = `O cliente deseja fazer a seguinte compra: "${quote}". 
   Por favor, extraia os dados do pedido e retorne um JSON com as seguintes informações:
   - "item": O nome do item que o cliente quer comprar. Se não for possível identificar, retorne -1.
@@ -30,6 +31,8 @@ const QuotePrompt = () => {
   }`;
 
   const handleGenerateForm = async () => {
+  
+  
     if (!quote.trim()) {
       alert('Por favor, insira algo para gerar o formulário.');
       return;
@@ -63,8 +66,8 @@ const QuotePrompt = () => {
   };
 
   const handleConfirm = () => {
-    message.success('Pedido confirmado! A cotação será processada.');
-    // Aqui você pode adicionar mais lógica para finalizar o pedido, enviar para outro endpoint, etc.
+    message.success('Pedido confirmado! A cotação será processada.');    
+    navigate('/waiting-list');   
   };
 
   return (

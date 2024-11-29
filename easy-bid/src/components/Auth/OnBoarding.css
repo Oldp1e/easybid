@@ -1,0 +1,64 @@
+/* Container principal do onboarding */
+.onboarding-page {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do onboarding */
+.onboarding-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* Formulário do onboarding */
+.onboarding-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilo para o card de boas-vindas */
+.welcome-card .ant-card {
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.welcome-card .ant-btn {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+/* Botão "Show!" */
+.welcome-card .ant-btn-primary {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.welcome-card .ant-btn-primary:hover {
+  background-color: #45a149;
+  border-color: #45a149;
+}
+
+/* Estilo para as ações (botões de navegação) */
+.onboarding-actions {
+  margin-top: 24px;
+}
+
+.onboarding-actions .ant-btn {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}

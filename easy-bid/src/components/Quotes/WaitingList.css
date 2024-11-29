@@ -1,0 +1,86 @@
+/* Container principal da Waiting List */
+.waiting-list-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ajuste para garantir que a página ocupe toda a altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Estilo para o card */
+  .waiting-card .ant-card {
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Garante que o card ocupe a largura total disponível */
+    max-width: 100%;
+  }
+  
+  /* Imagem da ilustração */
+  .waiting-illustration {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 250px; /* Limita o tamanho da ilustração */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para a mensagem */
+  .waiting-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 24px; /* Adiciona um espaço entre a mensagem e os botões */
+  }
+  
+  /* Estilo para os botões */
+  .waiting-actions {
+    display: flex;
+    flex-direction: column; /* Coloca os botões um em cima do outro */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .waiting-actions .ant-btn {
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    width: 100%; /* Garante que os botões tenham a mesma largura */
+    max-width: 400px; /* Limita a largura máxima dos botões */
+    margin-bottom: 16px; /* Adiciona espaçamento entre os botões */
+    text-align: center; /* Alinha o texto do botão ao centro */
+  }
+  
+  /* Estilo para o botão "Cotar outro produto" */
+  .waiting-actions .ant-btn-primary {
+    background-color: #4caf50;
+    border-color: #4caf50;
+  }
+  
+  .waiting-actions .ant-btn-primary:hover {
+    background-color: #45a149;
+    border-color: #45a149;
+  }
+  
+  /* Estilo para o botão "Ver minhas cotações" */
+  .waiting-actions .ant-btn {
+    background-color: #1890ff;
+    border-color: #1890ff;
+  }
+  
+  .waiting-actions .ant-btn:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  

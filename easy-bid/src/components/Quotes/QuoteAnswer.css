@@ -1,0 +1,34 @@
+.quote-answer-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-answer-container .ant-card {
+  margin-bottom: 20px;
+}
+
+.quote-answer-container .ant-card-title {
+  font-weight: bold;
+}
+
+.ant-list-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-btn-primary {  
+  align-items: center;
+}
+
+.ant-input-textarea {
+  resize: none;
+}
+
+.ant-space-vertical {
+  width: 100%;
+}
+
+.ant-btn {
+  margin-top: 10px;
+}

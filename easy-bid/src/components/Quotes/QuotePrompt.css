@@ -1,0 +1,112 @@
+/* Container principal da página */
+.quote-prompt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center;    /* Centraliza horizontalmente */
+  height: 100vh;          /* Altura total da viewport */
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a mensagem de ajuda acima do Input */
+.quote-prompt-container .ant-form-item-help {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-top: 8px;
+}
+
+/* Formulário do input */
+.ant-input {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+}
+
+
+/* Estilo para o título de confirmação de cotação */
+.generated-form h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Estilo para cada item da cotação (linha e coluna) */
+.generated-form .ant-row {
+  margin-bottom: 16px;
+}
+
+/* Fortalecendo as colunas para destacar os itens */
+.generated-form .ant-col {
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.generated-form .ant-col strong {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilo para os botões de ação (Sim e Editar) */
+.generated-form .ant-btn {
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.generated-form .ant-btn-primary {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.generated-form .ant-btn-primary:hover {
+  background-color: #45a149;
+  border-color: #45a149;
+}
+
+.generated-form .ant-btn:not(.ant-btn-primary) {
+  background-color: #f0f0f0;
+  border-color: #d9d9d9;
+}
+
+.generated-form .ant-btn:not(.ant-btn-primary):hover {
+  background-color: #e6e6e6;
+  border-color: #d9d9d9;
+}
+
+/* Aumentando o espaçamento entre os botões */
+.generated-form .ant-btn + .ant-btn {
+  margin-left: 8px;
+}
+
+/* Estilo para o loader/spinner enquanto carrega */
+.ant-spin {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo para o ícone da lupa no input */
+.ant-input-suffix {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.ant-input-suffix:hover {
+  color: #0056b3;
+}
+
+/* Resposta da API que não foi compreendida */
+.generated-form p {
+  color: #f56c6c;
+  font-size: 14px;
+  font-style: italic;
+}
+

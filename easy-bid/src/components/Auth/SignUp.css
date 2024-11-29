@@ -1,0 +1,61 @@
+/* SignupPage.css */
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .signup-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .signup-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  .signup-form .ant-form-item-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .signup-form .ant-input,
+  .signup-form .ant-input-password {
+    border-radius: 8px;
+    height: 40px;
+  }
+  
+  .signup-form .ant-btn {
+    border-radius: 8px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .signup-form .ant-btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+  }
+  
+  .signup-form .ant-btn-primary:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  
+  .signup-form .ant-btn-link {
+    color: #1890ff;
+    text-align: center;
+  }
+  
+  .signup-form .ant-btn-link:hover {
+    color: #40a9ff;
+  }
+  
