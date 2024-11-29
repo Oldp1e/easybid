@@ -1,0 +1,9 @@
+/* App.css */
+.app-layout {
+  min-height: 100vh; /* Ocupa 100% da altura da tela */
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  background-color: #f0f2f5; /* Fundo leve */
+  padding: 16px; /* Para evitar bordas coladas em telas pequenas */
+}

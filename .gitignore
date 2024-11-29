@@ -1,0 +1,25 @@
+# Ignorar o diretório node_modules
+/node_modules/
+/server/node_modules
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de build
+/dist
+/build
+
+# Ignorar arquivos temporários do sistema
+*.DS_Store
+*.env
+
+# Ignorar arquivos específicos do editor (exemplo para VS Code)
+.vscode/
+
+# Ignorar arquivos de dependências de pnpm
+.pnpm-debug.log
+
+# Ignorar arquivos do npm
+npm-debug.log
+
+# Ignorar arquivos gerados durante o desenvolvimento (exemplo para Next.js)
+.next/
