@@ -30,8 +30,7 @@
   
   .login-form .ant-input,
   .login-form .ant-input-password {
-    border-radius: 8px;
-    height: 40px;
+    border-radius: 8px;    
   }
   
   .login-form .ant-btn {

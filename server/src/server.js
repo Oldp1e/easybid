@@ -1,29 +1,40 @@
-import express from 'express';  // Certifique-se de que está usando "import"
-import { OpenAI } from 'openai';  // Certifique-se de que está importando corretamente a biblioteca OpenAI
+import express from 'express';
+import { OpenAI } from 'openai';
+import sequelize from './config/database.js'; // Importa a configuração do banco de dados
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '../.env' }); // Carrega variáveis do .env
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
-// Configuração da OpenAI com seu token
+
+// Configuração da OpenAI com sua chave de API
 const openai = new OpenAI({
-  apiKey: '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', // Substitua com sua chave de API
+  apiKey: process.env.OPENAI_API_KEY, // Use a variável do .env
 });
 
 // Middleware para processar o corpo da requisição
 app.use(express.json());
+
+// Rotas
+// app.use('/api/quotes', quoteRoutes);
+
+// Testando a conexão com o banco de dados
+sequelize.authenticate()
+  .then(() => console.log('Conexão com o banco de dados estabelecida com sucesso!'))
+  .catch((err) => console.error('Erro ao conectar ao banco de dados:', err));
 
 // Rota para gerar o formulário de cotação
 app.post('/api/generate-form', async (req, res) => {
   try {
     const { quote } = req.body;
 
-    // Enviando o prompt para o modelo da OpenAI
     const response = await openai.chat.completions.create({
-      model: 'gpt-3.5-turbo',  // Ou 'gpt-4' dependendo de sua necessidade
+      model: 'gpt-3.5-turbo',
       messages: [{ role: 'user', content: quote }],
     });
 
-    // Retornando a resposta do modelo para o frontend
     const message = response.choices[0].message.content;
     res.json({ formData: message });
   } catch (error) {
@@ -32,7 +43,13 @@ app.post('/api/generate-form', async (req, res) => {
   }
 });
 
-// Iniciando o servidor na porta especificada
-app.listen(port, () => {
+// Inicia o servidor na porta especificada
+app.listen(port, async () => {
+  try {
+    await sequelize.authenticate();
+    console.log('Conexão com o banco de dados estabelecida.');
+  } catch (error) {
+    console.error('Erro ao conectar ao banco de dados:', error);
+  }
   console.log(`Servidor rodando na porta ${port}`);
 });

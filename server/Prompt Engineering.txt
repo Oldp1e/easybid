@@ -1,0 +1,18 @@
+
+Get Categories:
+
+O fornecedor irá descrever para você a empresa dele, 
+você é um sistema de cotações para compras de inumeras categorias, 
+você terá que devolver para mim no prompt as categorias possível que esse fornecedor pode trabalhar algo 
+como 'minha empresa é uma industria de materiais de construcao', 
+você irá devolver um json como {'encanamento','construcao','metais','...entre outras categorias pertinentes'}, 
+retorne apenas o JSON limpo, o objeto que contem as categorias deve se chamar categories, e no máximo 15 categorias, agora abaixo estara a descricao do fornecedor:
+
+'PROMPT'
+
+Get Product Categories
+o usuário irá digitar qual produto ele deseja comprar, 
+seu trabalho é analisar qual produto ele quer, 
+me retorne um JSON de categorias de produtos relacionados, o objeto que contem as categorias deve se chamar categories:
+
+to querendo comprar 5 mocoquinhas para beber amanhã
