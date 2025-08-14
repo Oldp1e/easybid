@@ -3,7 +3,7 @@
 ## **Descrição do Projeto**  
 O **Easy Bid** é uma aplicação web projetada para facilitar o processo de cotações entre clientes e fornecedores. O sistema permite que clientes descrevam suas necessidades em um campo de entrada simples, e com base em seu input, o sistema gera formulários de cotação automaticamente. Essas cotações são enviadas para fornecedores, que podem responder com preços e detalhes. Além disso, o sistema oferece uma interface para que clientes e fornecedores interajam diretamente através de um chat, promovendo negociações rápidas e eficazes.
 
-> **Aviso:** Este repositório é privado, e todo o código nele contido está protegido por direitos autorais. Não compartilhe ou redistribua este projeto sem permissão expressa.
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b3608a58-a10e-4003-a397-81701ac2aa97" />
 
 ---
 
